@@ -1,57 +1,88 @@
-﻿//75.Sort Colors
+﻿////75.Sort Colors
 
+//public class Solution
+//{
+//    public static void Main()
+//    {
+//        int[] nums = [2, 0, 2, 1, 1, 0];
+//        SortColors(nums);
+//        Console.WriteLine(string.Join(",", nums));
+//    }
+//    public static void SortColors(int[] nums)
+//    {
+//        int zeros = 0;
+//        int ones = 0;
+//        int twos = 0;
+
+//        foreach (int num in nums)
+//        {
+//            if (num == 0)
+//            {
+//                zeros++;
+//            }
+//            else if (num == 1)
+//            {
+//                ones++;
+//            }
+//            else
+//            {
+//                twos++;
+//            }
+//        }
+//        int index = 0;
+
+//        while (zeros > 0)
+//        {
+//            nums[index] = 0;
+//            index++;
+//            zeros--;
+//        }
+//        while (ones > 0)
+//        {
+//            nums[index] = 1;
+//            index++;
+//            ones--;
+
+//        }
+//        while (twos > 0)
+//        {
+//            nums[index] = 2;
+//            index++;
+//            twos--;
+//        }
+
+
+
+//    }
+//}
+
+
+
+//66. Plus One
+
+using System.Linq;
 public class Solution
 {
     public static void Main()
     {
-        int[] nums = [2, 0, 2, 1, 1, 0];
-        SortColors(nums);
-        Console.WriteLine(string.Join(",", nums));
+        int[] digits = { 9, 9, 9 };
+        int[] result = PlusOne(digits);
+        Console.WriteLine(string.Join(",", result));
     }
-    public static void SortColors(int[] nums)
+    public static int[] PlusOne(int[] digits)
     {
-        int zeros = 0;
-        int ones = 0;
-        int twos = 0;
 
-        foreach (int num in nums)
+        for (int i = digits.Length - 1; i >= 0; i--)
         {
-            if (num == 0)
+            if (digits[i] < 9)
             {
-                zeros++;
+                digits[i]++;
+                return digits;
+
             }
-            else if (num == 1)
-            {
-                ones++;
-            }
-            else
-            {
-                twos++;
-            }
+            digits[i] = 0;
         }
-        int index = 0;
-
-        while (zeros > 0)
-        {
-            nums[index] = 0;
-            index++;
-            zeros--;
-        }
-        while (ones > 0)
-        {
-            nums[index] = 1;
-            index++;
-            ones--;
-
-        }
-        while (twos > 0)
-        {
-            nums[index] = 2;
-            index++;
-            twos--;
-        }
-
-
-
+        return new int[] { 1 }.Concat(digits).ToArray();
     }
+
 }
