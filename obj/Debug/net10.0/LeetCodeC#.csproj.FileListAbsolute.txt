@@ -1,0 +1,15 @@
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\bin\Debug\net10.0\LeetCodeC#.exe
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\bin\Debug\net10.0\LeetCodeC#.deps.json
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\bin\Debug\net10.0\LeetCodeC#.runtimeconfig.json
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\bin\Debug\net10.0\LeetCodeC#.dll
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\bin\Debug\net10.0\LeetCodeC#.pdb
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.AssemblyInfoInputs.cache
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.AssemblyInfo.cs
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.csproj.CoreCompileInputs.cache
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.sourcelink.json
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.dll
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\refint\LeetCodeC#.dll
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.pdb
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\LeetCodeC#.genruntimeconfig.cache
+C:\Users\Musthari Jalala\source\repos\LeetCodeC#\LeetCodeC#\obj\Debug\net10.0\ref\LeetCodeC#.dll
