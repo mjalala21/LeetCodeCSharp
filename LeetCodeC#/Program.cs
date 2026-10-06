@@ -60,29 +60,78 @@
 
 //66. Plus One
 
-using System.Linq;
+//using System.Linq;
+//public class Solution
+//{
+//    public static void Main()
+//    {
+//        int[] digits = { 9, 9, 9 };
+//        int[] result = PlusOne(digits);
+//        Console.WriteLine(string.Join(",", result));
+//    }
+//    public static int[] PlusOne(int[] digits)
+//    {
+
+//        for (int i = digits.Length - 1; i >= 0; i--)
+//        {
+//            if (digits[i] < 9)
+//            {
+//                digits[i]++;
+//                return digits;
+
+//            }
+//            digits[i] = 0;
+//        }
+//        return new int[] { 1 }.Concat(digits).ToArray();
+//    }
+
+//}
+
+
+
+//20. Valid Parentheses
+
+using System;
+using System.Collections.Generic;
+
 public class Solution
 {
+    public static bool IsValid(string s)
+    {
+        Stack<char> stack = new Stack<char>();
+
+        foreach (char ch in s)
+        {
+            if (ch == '(' || ch == '{' || ch == '[')
+            {
+                stack.Push(ch);
+            }
+            else
+            {
+                if (stack.Count == 0)
+                {
+                    return false;
+                }
+
+                char top = stack.Pop();
+
+                if ((ch == ')') && top != '(' ||
+                   ch == ']' && top != '[' ||
+                   ch == '}' && top != '{'
+                  )
+                {
+                    return false;
+                }
+            }
+        }
+
+        return stack.Count == 0;
+    }
     public static void Main()
     {
-        int[] digits = { 9, 9, 9 };
-        int[] result = PlusOne(digits);
-        Console.WriteLine(string.Join(",", result));
+        string s = "{[()}]";
+
+        Console.WriteLine(IsValid(s));
+
     }
-    public static int[] PlusOne(int[] digits)
-    {
-
-        for (int i = digits.Length - 1; i >= 0; i--)
-        {
-            if (digits[i] < 9)
-            {
-                digits[i]++;
-                return digits;
-
-            }
-            digits[i] = 0;
-        }
-        return new int[] { 1 }.Concat(digits).ToArray();
-    }
-
 }
